@@ -7,18 +7,22 @@ body {
 
 .container {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 auto; 
     padding: 20px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     width: 90%; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
 }
 
-h1, h2 {
+h1 {
     text-align: center;
     color: #d81b60;
     font-size: 2.5em;
+    margin: 0;
 }
 
 label {
@@ -26,6 +30,7 @@ label {
     margin-top: 15px;
     font-weight: bold;
     color: #333;
+    text-align: left;
 }
 
 input[type="text"],
@@ -47,10 +52,6 @@ input[type="date"]:focus,
 select:focus {
     border-color: #d81b60; 
     box-shadow: 0 0 5px rgba(216, 27, 96, 0.5);
-}
-
-input:invalid {
-    border-color: red;
 }
 
 .required {
