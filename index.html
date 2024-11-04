@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> <!-- เชื่อมต่อกับไฟล์ CSS -->
+    <title>แบบฟอร์มการสมัครสมาชิกห้องสมุด</title>
+</head>
+<body>
+    <div class="container">
+        <h1>แบบฟอร์มการสมัครสมาชิกห้องสมุด</h1>
+        <form>
+            <label for="fullNameThai">ชื่อ – นามสกุล (ภาษาไทย) <span class="required">*</span></label>
+            <input type="text" id="fullNameThai" name="fullNameThai" required placeholder="กรุณากรอกชื่อ – นามสกุล">
+
+            <label for="fullNameEng">Full Name (English) <span class="required">*</span></label>
+            <input type="text" id="fullNameEng" name="fullNameEng" required placeholder="Please enter your full name">
+
+            <label for="gender">เพศ <span class="required">*</span></label>
+            <select id="gender" name="gender" required>
+                <option value="">-- กรุณาเลือก --</option>
+                <option value="male">ชาย</option>
+                <option value="female">หญิง</option>
+                <option value="other">อื่น ๆ</option>
+            </select>
+
+            <label for="studentId">รหัสนักศึกษา <span class="required">*</span></label>
+            <input type="text" id="studentId" name="studentId" required placeholder="กรุณากรอกรหัสนักศึกษา">
+
+            <label for="faculty">คณะที่ศึกษา <span class="required">*</span></label>
+            <input type="text" id="faculty" name="faculty" required placeholder="กรุณากรอกคณะที่ศึกษา">
+
+            <label for="email">ที่อยู่อีเมล <span class="required">*</span></label>
+            <input type="email" id="email" name="email" required placeholder="example@example.com">
+
+            <label for="dob">วันเดือนปีเกิด <span class="required">*</span></label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label>ประเภทของหนังสือที่สนใจ</label>
+            <div class="checkbox-group">
+                <input type="checkbox" id="fiction" name="bookType" value="fiction">
+                <label for="fiction">นิยาย</label>
+                <input type="checkbox" id="nonFiction" name="bookType" value="non-fiction">
+                <label for="nonFiction">สารคดี</label>
+                <input type="checkbox" id="science" name="bookType" value="science">
+                <label for="science">วิทยาศาสตร์</label>
+                <input type="checkbox" id="history" name="bookType" value="history">
+                <label for="history">ประวัติศาสตร์</label>
+            </div>
+
+            <label>ความต้องการรับข่าวสารข้อมูลของห้องสมุดทางอีเมลหรือไม่</label>
+            <div class="radio-group">
+                <input type="radio" id="subscribeYes" name="subscribe" value="yes">
+                <label for="subscribeYes">ใช่</label>
+                <input type="radio" id="subscribeNo" name="subscribe" value="no">
+                <label for="subscribeNo">ไม่</label>
+            </div>
+
+            <button type="submit">สมัครสมาชิก</button>
+        </form>
+    </div>
+</body>
+</html>
