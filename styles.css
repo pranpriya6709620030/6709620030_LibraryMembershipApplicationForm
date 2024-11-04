@@ -56,10 +56,7 @@ select:focus {
     margin-top: 10px;
 }
 
-.checkbox-group input,
-.radio-group input {
-    margin-right: 5px;
-}
+
 
 button {
     margin-top: 20px;
@@ -79,6 +76,18 @@ button:hover {
     background-color: #c2185b;
     transform: scale(1.05);
 }
+.container {
+    width: 90%; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+@media (max-width: 600px) {
+    body {
+        font-size: 14px; 
+    }
+}
+
+
 @media (max-width: 768px) {
     .container {
         padding: 15px; 
